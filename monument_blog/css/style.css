@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Raleway:400,600');
+
+/* ----------------------------------------
+Base Styles
+------------------------------------------- */
+* {
+	padding: 0;
+	margin:0;
+}
+
+body {
+font-family: "Raleway", sans-serif;
+}
+
+ a {
+	 text-decoration: none;
+ }
+
+header, nav {
+	text-transform: uppercase;
+	text-align: center;
+}
+
+nav {
+	word-spacing: 100px;
+	padding-top: 10px;
+}
+
+nav a {
+	font-size: 16px;
+	color: #7B98AA;
+}
+
+header {
+	letter-spacing: 15px;
+	padding: 40px 40px 70px 40px;
+}
+
+header a {
+	color: #44545E;
+}
+
+h2, h3, p {
+	color: #44545E;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+h2 {
+	text-align: left;
+	font-size: 23px;
+	padding-bottom: 50px;
+	text-transform: uppercase;
+}
+
+h3 {
+	text-size: 18px;
+	text-align: left;
+	padding-bottom: 20px;
+	text-transform: uppercase;
+}
+
+ p {
+	 font-family: "Lato", serif;
+	 font-size: 15px;
+	 padding-top: 30px;
+	 padding-bottom: 30px;
+ }
+
+ .last {
+	 padding-bottom: 70px;
+ }
+
+ aside {
+	 padding-bottom: 40px;
+	 font-family: "Raleway", serif;
+ }
+aside h3 {
+	padding: 10px;
+	list-style-type: square;
+}
+ul li {
+	spacing: 20px;
+}
+ ul li a {
+	 color:#7B98AA;
+	 padding-left: 15px;
+	 list-style-type: square;
+	 spacing: 20px;
+ }
+
+footer {
+	background-color: #CDF3F6;
+	text-align: center;
+	padding: 20px;
+
+}
+.media {
+	font-family: "Raleway", serif;
+	font-size: 15px;
+	text-transform: uppercase;
+	word-spacing: 30px;
+}
+.media a {
+	color:#44545E;
+	font-weight: bold;
+}
+.copyright {
+	font-size: 15px;
+	text-decoration: none;
+	padding-right: 20px;
+}
+ hr {
+	 border: 1px solid #44545E;
+	 margin-top: 15px;
+
+ }
+footer p a {
+	color: #44545E;
+	font-weight: bold;
+}
+/* Fix for responsive images */
+img {
+	max-width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+
+aside img {
+	display: inline;
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
