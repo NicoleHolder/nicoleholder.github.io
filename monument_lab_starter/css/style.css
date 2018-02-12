@@ -1,0 +1,229 @@
+
+/* Add a link to GOOGLE FONTS LINK at the top! THis should be the first line of your stylesheet.*/
+
+/* ----------------------------------------
+Base Styles
+------------------------------------------- */
+/* Note: Makes sure that padding and the border are included in the width for each element. */
+/* Don't add anything else under the * selector! */
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin:0;
+	text-align: center;
+}
+h2, h3 {
+	text-transform: uppercase;
+	text-align: center;
+	font-family: "Raleway", serif;
+}
+
+h2 {
+	font-size: 23px;
+}
+
+h3 {
+	font-size: 18px;
+	color: #44545E;
+}
+
+p {
+	font-family: "Lato", serif;
+	color: #44545E;
+	line-height: 1.35;
+	font-size: 15px;
+}
+
+/*Note: fix so that images will scale with their containers. We'll chat about this more when we cover responsive design*/
+
+img {
+	max-width: 80%;
+	display: block;
+}
+
+
+/* ----------------------------------------
+Header
+------------------------------------------- */
+
+nav {
+	display: block;
+	word-spacing: 100px;
+	padding: 10px;
+}
+
+nav a {
+	text-decoration: none;
+	color:#7B9BAA;
+	font-family:"Raleway", serif;
+	text-transform: uppercase;
+}
+
+header {
+	background-image: url("../images/home_header_bg.jpg");
+	background-size: cover;
+	padding-top: 400px;
+	height: 800px;
+	background-position: center;
+	background-repeat: no-repeat;
+	text-align: center;
+	color: #ffffff;
+	text-transform: uppercase;
+	margin-bottom: 120px;
+
+}
+h1 {
+	font-size: 37px;
+	letter-spacing: 20px;
+	text-transform: uppercase;
+}
+
+
+/* ----------------------------------------
+Articles
+------------------------------------------- */
+.main {
+	max-width: 1000px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 20px;
+	margin: 10px 30px 40px;
+	text-align: center;
+}
+
+.main img {
+	margin: 20px auto;
+}
+
+.main h3 {
+	margin: 5px auto 40px;
+	font-size: 18px;
+}
+
+article button {
+	background-color: white;
+	display: inline-block;
+	padding: 5px 40px;
+	margin: 50px auto 75px;
+	text-transform: uppercase;
+	font-size: 13px;
+	color:#44545E;
+	border: 2px solid #44545E;
+	transition-duration: 0.4s;
+}
+article button:hover {
+	background-color:#44545E;
+	color: white;
+}
+/* ----------------------------------------
+About
+------------------------------------------- */
+.About {
+	display: block;
+	background-color: lightcyan;
+	padding: 100px 200px;
+	color: #44545E;
+}
+.About h2 {
+	padding-bottom: 30px;
+}
+
+.About h3 {
+	padding-bottom: 40px;
+}
+.About p {
+	line-height:1.5;
+	padding: 0 300px;
+}
+
+/* ----------------------------------------
+Gallery
+------------------------------------------- */
+
+
+.Issue_twenty h2 {
+	margin: 40px;
+}
+
+.gallery-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.gallery-wrapper img {
+	object-fit: none;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+/* ----------------------------------------
+Footer
+------------------------------------------- */
+footer {
+	background-color: lightcyan;
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+
+.social-links {
+	word-spacing: 20px;
+}
+
+.social-links i {
+	color:#44545E;
+	font-size: 1.5em;
+	padding-bottom: 20px;
+}
+
+input {
+	text-transform: uppercase;
+	font-family: "Lato", Serif;
+	color: #7B9BAA;
+	padding: 5px 60px;
+	font-size: 15px;
+}
+
+footer button {
+	text-transform: uppercase;
+	background-color: lightcyan;
+	padding: 10px;
+	margin-left: 40px;
+	margin-bottom: 30px;
+	margin-top:10px;
+	font-size: 15px;
+}
+hr {
+	 border: 1px solid #44545E;
+}
+ footer p {
+	 display: inline-block;
+	 padding-top: 10px;
+	 font-family: "Lato", Serif;
+ }
+
+@media screen and (max-width: 950px){
+	.main {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	.main h3 {
+		font-size: 15px;
+	}
+	p {
+		font-size: 12px;
+	}
+
+	@media screen and (min-width: 950px ) {
+		.About p {
+			padding: 100px 210px;
+		}
+	}
+
+@media screen and (max-width: 600px){
+	.main {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+}
