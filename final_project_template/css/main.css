@@ -1,0 +1,85 @@
+
+/* --------------------------------------------------------------------------
+Base styles:
+----------------------------------------------------------------------------- */
+/* Fix to include padding and border in the total width for each element */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
+}
+p {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  color: #00214f;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+/* Fix for responsive images */
+img {
+  max-width: 100%;
+}
+header {
+  display: inline-block;
+  padding-left: 200px;
+  background-color: rgba(234,234,234, 1);
+  width: 2000px;
+  padding-bottom: 20px;
+  border-color: #e9eaee;
+}
+nav {
+  display: inline-grid;
+  grid-template-columns: repeat(5,1fr);
+  padding-left: 400px;
+  text-align: center;
+  justify-content: center;
+}
+nav a {
+  text-decoration: none;
+  color: #00214f;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  padding-right: 40px;
+  padding-top: 30px;
+  border-top: 2px solid #F95758;
+}
+
+header img {
+  max-width: 100px;
+  padding-top: 20px;
+}
+div h1 {
+  display: block;
+  padding: 20px;
+  font-family: "Libre Franklin", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  text-align: center;
+  color: #f1704a;
+}
+h2 {
+  font-family: "Libre Franklin", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+section {
+  display: block;
+  height: 660px;
+  margin: 20px;
+}
+#selector {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+}
+article img {
+  padding-bottom: 20px;
+}
+
+footer {
+  background-color: #e5e5e5;
+    border-color: #e9eaee;
+    border-top-width: 0px;
+    padding-top: 43px;
+    padding-bottom: 40px;
+}
