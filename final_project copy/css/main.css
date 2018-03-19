@@ -1,0 +1,401 @@
+
+/* --------------------------------------------------------------------------
+Base styles:
+----------------------------------------------------------------------------- */
+/* Fix to include padding and border in the total width for each element */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
+}
+p {
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 1.5;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  color: #888888;
+  font-weight: 400;
+  font-size: 18px;
+}
+article p {
+  display: block;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  padding-top: 35px;
+  font-style: oblique;
+  font-weight: 400;
+  font-size: 32px;
+  opacity:0;
+  transition: all 1s ease-in-out;
+}
+
+/* Fix for responsive images */
+img {
+  max-width: 100%;
+}
+article img {
+  max-width:90%;
+  opacity: 0.4;
+  padding-bottom: 10px;
+  padding-top: 60px;
+  transition: .5s ease-in-out;
+}
+/* need to make sticky header */
+header {
+  display: block;
+  padding: 0;
+  /* position: fixed;
+  top: 0;
+  width: 100%; */
+  background-color: #eaeaea;
+  border-color: #e9eaee;
+  box-shadow: rgba(0,0,0,.117647) 0 1px 3px;
+  /* position: fixed; */
+  height: 90px;
+  z-index:10000;
+}
+nav {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  grid-template-columns: repeat(5,1fr);
+  padding-left: 400px;
+  padding-bottom: 10px;
+  text-align: center;
+  justify-content: center;
+}
+nav a {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  text-decoration: none;
+  color: #013049;
+  font-size: 13px;
+  letter-spacing: 1px;
+  padding-top: 40px;
+  text-transform: uppercase;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  padding-right: 30px;
+  padding-left: 30px;
+  transform:translateY(-80px);
+  /* padding-top: 30px; */
+  /* border-top: 2px solid #F95758; */
+  text-align:center;
+  justify-content: center;
+}
+#human:hover {
+  border-top: 3px solid #27aae1;
+  color: #27aae1;
+}
+
+#plant:hover {
+  border-top: 3px solid #95c93d;
+  color: #95c93d;
+}
+
+#company:hover {
+  border-top: 3px solid #f1704a;
+  color: #f1704a;
+}
+
+#contact:hover {
+  border-top: 3px solid #f1704a;
+  color: #f1704a;
+}
+
+#webstore:hover {
+  border-top: 3px solid #f1704a;
+  color: #f1704a;
+}
+
+header img {
+  max-width: 100px;
+  padding-top: 10px;
+  margin-left: 200px;
+}
+div h1 {
+  display: block;
+  margin-top:30px;
+  padding: 20px;
+  font-family: "Corbert", Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  text-align: center;
+  color: #f1704a;
+}
+h2 {
+  font-family: "Corbert", Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #ffffff;
+  padding-top: 40px;
+  font-size: 50px;
+}
+h4 {
+  font-family: "Corbert", Arial, Helvetica, sans-serif;
+  font-weight:bold;
+  text-align: center;
+
+  color: #888888;
+  padding: 40px;
+  font-size: 24px;
+}
+
+section {
+  display: block;
+  height: 800px;
+  margin: 20px;
+}
+#selector {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+  text-align: center;
+  margin-bottom: 100px;
+  margin-top: 40px;
+}
+
+.plant_article{
+  height:620px;
+  display:block;
+  z-index: 5;
+  background-color: #95c93d;
+}
+.animal_article{
+  height:620px;
+  z-index: 5;
+  background-color: #f1704a;
+}
+.other_article{
+  height:620px;
+  z-index: 5;
+  background-color: #172734;
+}
+article img:hover {
+  opacity:1;
+  transform: scale(1.2,1.2);
+  z-index: 100;
+}
+article img:hover ~p {
+  opacity:1;
+}
+#selector article:hover {
+  border: 8px outset #888888;
+}
+
+button {
+  text-align: center;
+  padding: 10px;
+  background-color: red;
+}
+ .plant_section {
+   display: block;
+   background-color: #95c93d;
+ }
+ #accordion {
+	list-style:none;
+	padding:0;
+	height:518.4px;
+	width:1100px;
+	margin:50px 0 300px 100px;
+	border:2px solid #000000;
+	overflow:hidden;
+}
+#accordion .panel {
+	float:left;
+	display:block;
+	height:518.4px;
+	width:44px;
+	overflow:hidden;
+	color:#000000;
+	text-decoration:none;
+	font-size:36px;
+	line-height:1.5em
+}
+#accordion .panel.active {
+	width:775px;
+}
+
+.panelContent {
+	padding:15px 15px 15px 55px;
+	height:240px;
+	width:778px;
+  line-height: 1.5;
+}
+
+.panelContent-p1 {
+  background-image: url("/Users/nicoleholder/Desktop/fewd/final_project copy/css/img/lettuce_blur copy.jpg");
+  height:778px;
+  background-size: 774.4px 518.4px;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding-top:240px;
+}
+.panelContent-p1:hover {
+  background-image:url("/Users/nicoleholder/Desktop/fewd/final_project copy/css/img/lettuce.JPG");
+  color: #ffffff;
+  transition-delay: 0.25s;
+  transition-duration: 1s;
+}
+
+.panelContent-p1 button:hover {
+  background-color: green;
+  color: #ffffff;
+}
+.panelContent-p2 {
+  background-image: url("/Users/nicoleholder/Desktop/fewd/final_project copy/css/img/Blueberries_blur.jpg");
+  height:778px;
+  background-size: 774.4px 518.4px;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding-top:240px;
+}
+.panelContent-p2:hover {
+  background-image:url("/Users/nicoleholder/Desktop/fewd/final_project copy/css/img/Blueberries.JPG");
+  color: #ffffff;
+  transition-delay: 0.25s;
+  transition-duration: 1s;
+}
+
+.panelContent-p2 button:hover {
+  background-color: green;
+  color: #ffffff;
+}
+.panelContent-p3 {
+  background-image: url("/Users/nicoleholder/Desktop/fewd/final_project copy/css/img/miscanthus_blur.jpg");
+  height:778px;
+  background-size: 774.4px 518.4px;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding-top:240px;
+}
+.panelContent-p3:hover {
+  background-image:url("/Users/nicoleholder/Desktop/fewd/final_project copy/css/img/miscanthus.JPG");
+  color: #ffffff;
+  transition-delay: 0.25s;
+  transition-duration: 1s;
+}
+
+.panelContent-p3 button:hover {
+  background-color: green;
+  color: #ffffff;
+}
+.panelContent-p4 {
+  background-image: url("/Users/nicoleholder/Desktop/fewd/final_project copy/css/img/sugar beet_blur.jpg");
+  height:778px;
+  background-size: 774.4px 518.4px;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding-top:240px;
+}
+.panelContent-p4:hover {
+  background-image:url("/Users/nicoleholder/Desktop/fewd/final_project copy/css/img/sugar beet.JPG");
+  color: #ffffff;
+  transition-property: all ease-in-out;
+  transition-delay: 0.25s;
+  transition-duration: 1s;
+}
+
+.panelContent-p4 button:hover {
+  background-color: green;
+  color: #ffffff;
+}
+
+.green1 {
+	width:42px;
+	height:648px;
+	float:left;
+	background: no-repeat 4px 85px #006400;
+	border-right:2px solid #ffffff;
+
+}
+.green2 {
+	width:42px;
+	height:648px;
+	float:left;
+	background: no-repeat 4px 85px #008000;
+	border-right:2px solid #ffffff;
+
+}
+.green3 {
+	width:42px;
+	height:648px;
+	float:left;
+	background: no-repeat 4px 85px #32CD32;
+	border-right:2px solid #ffffff;
+
+}
+.green4 {
+	width:42px;
+	height:648px;
+	float:left;
+	background: no-repeat 4px 85px #3CB371;
+	border-right:2px solid #ffffff;
+
+}
+.green5 {
+	width:42px;
+	height:648px;
+	float:left;
+	background: no-repeat 4px 85px #9ACD32;
+	border-right:2px solid #ffffff;
+
+}
+.green6 {
+	width:42px;
+	height:648px;
+	float:left;
+	background: no-repeat 4px 85px #6B8E23;
+	border-right:2px solid #ffffff;
+
+}
+.green7 {
+	width:42px;
+	height:648px;
+	float:left;
+	background: no-repeat 4px 85px #2E8B57;
+	border-right:2px solid #ffffff;
+
+}
+.green8 {
+	width:42px;
+	height:648px;
+	float:left;
+	background: no-repeat 4px 85px #7CFC00;
+	border-right:2px solid #ffffff;
+
+}
+
+.last {
+	border:none
+}
+ .animal_section {
+   display: block;
+   background-color: #f1704a;
+ }
+ .other_section {
+   background-color: #172734;
+ }
+
+footer {
+  background-color: #e5e5e5;
+    border-color: #e9eaee;
+    border-top-width: 0px;
+    padding-top: 43px;
+    padding-bottom: 40px;
+}
+@media screen and (max-width: 1200px) {
+  #accordian {
+    height:259.2px;
+  	width:550px;
+  	margin:12px 0 150px 50px;
+  }
+}
+
+/* The bottom sections will be hidden until they choose
+an organism type - should it be a whole other page?
+maybe the section just expands to cover more area.
+will hide everything else while they are in the sections.
+/*
