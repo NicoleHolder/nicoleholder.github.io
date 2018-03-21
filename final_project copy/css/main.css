@@ -16,17 +16,19 @@ p {
   color: #888888;
   font-weight: 400;
   font-size: 18px;
+  padding: 20px;
 }
 article p {
   display: block;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   color: #ffffff;
-  padding-top: 35px;
   font-style: oblique;
   font-weight: 400;
-  font-size: 32px;
+  font-size: 20px;
   opacity:0;
   transition: all 1s ease-in-out;
+  z-index: 10;
+  padding: 5px;
 }
 
 /* Fix for responsive images */
@@ -36,21 +38,19 @@ img {
 article img {
   max-width:90%;
   opacity: 0.4;
-  padding-bottom: 10px;
-  padding-top: 60px;
+  padding-top: 25px;
   transition: .5s ease-in-out;
 }
-/* need to make sticky header */
+
 header {
   display: block;
   padding: 0;
-  /* position: fixed;
+  position: fixed;
   top: 0;
-  width: 100%; */
+  width: 100%;
   background-color: #eaeaea;
   border-color: #e9eaee;
   box-shadow: rgba(0,0,0,.117647) 0 1px 3px;
-  /* position: fixed; */
   height: 90px;
   z-index:10000;
 }
@@ -79,8 +79,6 @@ nav a {
   padding-right: 30px;
   padding-left: 30px;
   transform:translateY(-80px);
-  /* padding-top: 30px; */
-  /* border-top: 2px solid #F95758; */
   text-align:center;
   justify-content: center;
 }
@@ -114,15 +112,17 @@ header img {
   padding-top: 10px;
   margin-left: 200px;
 }
+
 div h1 {
   display: block;
-  margin-top:30px;
-  padding: 20px;
+  margin-top:100px;
+  padding: 10px;
   font-family: "Corbert", Arial, Helvetica, sans-serif;
   font-weight: 300;
   text-align: center;
   color: #f1704a;
 }
+
 h2 {
   font-family: "Corbert", Arial, Helvetica, sans-serif;
   font-weight: 300;
@@ -130,14 +130,23 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 4px;
   color: #ffffff;
-  padding-top: 40px;
-  font-size: 50px;
+  padding-top: 20px;
+  font-size: 36px;
 }
+
+h3 {
+display:block;
+font-family: "Libre Franklin", "Open Sans", sans-serif;
+text-align: center;
+font-size: 36px;
+margin-bottom: 50px;
+margin-top: 20px;
+}
+
 h4 {
   font-family: "Corbert", Arial, Helvetica, sans-serif;
   font-weight:bold;
   text-align: center;
-
   color: #888888;
   padding: 40px;
   font-size: 24px;
@@ -148,47 +157,44 @@ section {
   height: 800px;
   margin: 20px;
 }
+
 #selector {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 20px;
   text-align: center;
-  margin-bottom: 100px;
-  margin-top: 40px;
+  margin-top: 20px;
 }
-
-.plant_article{
-  height:620px;
-  display:block;
+.plant_article, .animal_article, .other_article {
+  height:420px;
   z-index: 5;
-  background-color: #95c93d;
+}
+.plant_article{
+    background-color: #95c93d;
 }
 .animal_article{
-  height:620px;
-  z-index: 5;
   background-color: #f1704a;
 }
 .other_article{
-  height:620px;
-  z-index: 5;
   background-color: #172734;
+}
+article:hover > p {
+  opacity:1;
+  z-index: 200;
 }
 article img:hover {
   opacity:1;
   transform: scale(1.2,1.2);
   z-index: 100;
 }
-article img:hover ~p {
+
+article:hover > img {
   opacity:1;
+  transform: scale(1.2,1.2);
+  z-index: 100;
 }
 #selector article:hover {
   border: 8px outset #888888;
-}
-
-button {
-  text-align: center;
-  padding: 10px;
-  background-color: red;
 }
  .plant_section {
    display: block;
@@ -196,10 +202,10 @@ button {
  }
  #accordion {
 	list-style:none;
-	padding:0;
+	padding:0px;
 	height:518.4px;
-	width:1100px;
-	margin:50px 0 300px 100px;
+	width:945px;
+	margin:10px auto;
 	border:2px solid #000000;
 	overflow:hidden;
 }
@@ -207,34 +213,37 @@ button {
 	float:left;
 	display:block;
 	height:518.4px;
-	width:44px;
+	width:0px;
 	overflow:hidden;
 	color:#000000;
 	text-decoration:none;
-	font-size:36px;
-	line-height:1.5em
 }
 #accordion .panel.active {
 	width:775px;
 }
 
-.panelContent {
-	padding:15px 15px 15px 55px;
-	height:240px;
-	width:778px;
-  line-height: 1.5;
-}
-
-.panelContent-p1 {
-  background-image: url("/Users/nicoleholder/Desktop/fewd/final_project copy/css/img/lettuce_blur copy.jpg");
-  height:778px;
+.panelContent-p1, .panelContent-p2, .panelContent-p3,
+.panelContent-p4, .panelContent-p5, .panelContent-p6,
+.panelContent-p7, .panelContent-p8 {
+  height:518.4px;
   background-size: 774.4px 518.4px;
   background-repeat: no-repeat;
   text-align: center;
-  padding-top:240px;
+  padding-top:100px;
+  line-height:1.0;
+}
+
+.panelContent-p1 {
+  background-image: url("/Users/nicoleholder/Desktop/fewd/final_project copy/css/img/lettuce_blur.jpg");
+
 }
 .panelContent-p1:hover {
   background-image:url("/Users/nicoleholder/Desktop/fewd/final_project copy/css/img/lettuce.JPG");
+  transition-delay: 1s;
+  transition-duration: 2s;
+}
+.panelContent-p1:hover > h3 {
+  background-color:#f1704a;
   color: #ffffff;
   transition-delay: 0.25s;
   transition-duration: 1s;
@@ -245,15 +254,17 @@ button {
   color: #ffffff;
 }
 .panelContent-p2 {
-  background-image: url("/Users/nicoleholder/Desktop/fewd/final_project copy/css/img/Blueberries_blur.jpg");
-  height:778px;
-  background-size: 774.4px 518.4px;
-  background-repeat: no-repeat;
-  text-align: center;
-  padding-top:240px;
+  background-image: url("/Users/nicoleholder/Desktop/fewd/final_project copy/css/img/Blueberries_blur.jpg"); */
+
 }
 .panelContent-p2:hover {
   background-image:url("/Users/nicoleholder/Desktop/fewd/final_project copy/css/img/Blueberries.JPG");
+  color: #f1704a;
+  transition-delay: 1s;
+  transition-duration: 2s;
+}
+.panelContent-p2:hover > h3 {
+  background-color:#f1704a;
   color: #ffffff;
   transition-delay: 0.25s;
   transition-duration: 1s;
@@ -265,14 +276,15 @@ button {
 }
 .panelContent-p3 {
   background-image: url("/Users/nicoleholder/Desktop/fewd/final_project copy/css/img/miscanthus_blur.jpg");
-  height:778px;
-  background-size: 774.4px 518.4px;
-  background-repeat: no-repeat;
-  text-align: center;
-  padding-top:240px;
 }
 .panelContent-p3:hover {
   background-image:url("/Users/nicoleholder/Desktop/fewd/final_project copy/css/img/miscanthus.JPG");
+  color: #f1704a;
+  transition-delay: 1s;
+  transition-duration: 2s;
+}
+.panelContent-p3:hover > h3 {
+  background-color:#f1704a;
   color: #ffffff;
   transition-delay: 0.25s;
   transition-duration: 1s;
@@ -284,98 +296,166 @@ button {
 }
 .panelContent-p4 {
   background-image: url("/Users/nicoleholder/Desktop/fewd/final_project copy/css/img/sugar beet_blur.jpg");
-  height:778px;
-  background-size: 774.4px 518.4px;
-  background-repeat: no-repeat;
-  text-align: center;
-  padding-top:240px;
 }
 .panelContent-p4:hover {
   background-image:url("/Users/nicoleholder/Desktop/fewd/final_project copy/css/img/sugar beet.JPG");
-  color: #ffffff;
+  color: #f1704a;
   transition-property: all ease-in-out;
+  transition-delay: 1s;
+  transition-duration: 2s;
+}
+.panelContent-p4:hover > h3 {
+  background-color:#f1704a;
+  color: #ffffff;
   transition-delay: 0.25s;
   transition-duration: 1s;
 }
-
 .panelContent-p4 button:hover {
   background-color: green;
   color: #ffffff;
 }
 
-.green1 {
-	width:42px;
-	height:648px;
-	float:left;
-	background: no-repeat 4px 85px #006400;
-	border-right:2px solid #ffffff;
+.panelContent-p5 {
+  background-image: url("/Users/nicoleholder/Desktop/fewd/final_project copy/css/img/Brachypodium_blur.jpg");
 
+}
+.panelContent-p5:hover {
+  background-image:url("/Users/nicoleholder/Desktop/fewd/final_project copy/css/img/Brachypodium.jpg");
+  color: #f1704a;
+  transition-property: all ease-in-out;
+  transition-delay: 1s;
+  transition-duration: 2s;
+}
+.panelContent-p5:hover > h3 {
+  background-color:#f1704a;
+  color: #ffffff;
+  transition-delay: 0.25s;
+  transition-duration: 1s;
+}
+
+.panelContent-p5 button:hover {
+  background-color: green;
+  color: #ffffff;
+}
+.panelContent-p6 {
+  background-image: url("/Users/nicoleholder/Desktop/fewd/final_project copy/css/img/plant_blurry.jpg");
+
+}
+.panelContent-p6:hover {
+  background-image:url("/Users/nicoleholder/Desktop/fewd/final_project copy/css/img/plant.jpg");
+  color: #f1704a;
+  transition-property: all ease-in-out;
+  transition-delay: 1s;
+  transition-duration: 2s;
+}
+.panelContent-p6:hover > h3 {
+  background-color:#f1704a;
+  color: #ffffff;
+  transition-delay: 0.25s;
+  transition-duration: 1s;
+}
+.panelContent-p6 button:hover {
+  background-color: green;
+  color: #ffffff;
+}
+.panelContent-p7 {
+  background-image: url("/Users/nicoleholder/Desktop/fewd/final_project copy/css/img/flower_blur.jpg");
+
+}
+.panelContent-p7:hover {
+  background-image:url("/Users/nicoleholder/Desktop/fewd/final_project copy/css/img/flower.jpg");
+  color: #f1704a;
+  transition-property: all ease-in-out;
+  transition-delay: 1s;
+  transition-duration: 2s;
+}
+.panelContent-p7:hover > h3 {
+  background-color:#f1704a;
+  color: #ffffff;
+  transition-delay: 0.25s;
+  transition-duration: 1s;
+}
+
+.panelContent-p7 button:hover {
+  background-color: green;
+  color: #ffffff;
+}
+.panelContent-p8 {
+  background-image: url("/Users/nicoleholder/Desktop/fewd/final_project copy/css/img/coffee_blur.jpg");
+
+}
+.panelContent-p8:hover {
+  background-image:url("/Users/nicoleholder/Desktop/fewd/final_project copy/css/img/coffee.png");
+  color: #f1704a;
+  transition-property: all ease-in-out;
+  transition-delay: 1s;
+  transition-duration: 2s;
+}
+.panelContent-p8:hover > h3 {
+  background-color:#f1704a;
+  color: #ffffff;
+  transition-delay: 0.25s;
+  transition-duration: 1s;
+}
+
+.panelContent-p8 button:hover {
+  background-color: green;
+  color: #ffffff;
+}
+
+button {
+  size: 16px;
+  text-align: center;
+  padding: 10px;
+  background-color: #ffffff;
+}
+
+
+.green1, .green2, .green3, .green4, .green5, .green6, .green7, .green8 {
+	width:20px;
+	height:518.4px;
+	float:left;
+	border-right:2px solid #ffffff;
+}
+.green1 {
+	background: no-repeat 4px 85px #006400;
 }
 .green2 {
-	width:42px;
-	height:648px;
-	float:left;
-	background: no-repeat 4px 85px #008000;
-	border-right:2px solid #ffffff;
-
+  background: no-repeat 4px 85px #008000;
 }
 .green3 {
-	width:42px;
-	height:648px;
-	float:left;
 	background: no-repeat 4px 85px #32CD32;
-	border-right:2px solid #ffffff;
-
 }
 .green4 {
-	width:42px;
-	height:648px;
-	float:left;
 	background: no-repeat 4px 85px #3CB371;
-	border-right:2px solid #ffffff;
-
 }
 .green5 {
-	width:42px;
-	height:648px;
-	float:left;
 	background: no-repeat 4px 85px #9ACD32;
-	border-right:2px solid #ffffff;
-
 }
 .green6 {
-	width:42px;
-	height:648px;
-	float:left;
 	background: no-repeat 4px 85px #6B8E23;
-	border-right:2px solid #ffffff;
-
 }
 .green7 {
-	width:42px;
-	height:648px;
-	float:left;
 	background: no-repeat 4px 85px #2E8B57;
-	border-right:2px solid #ffffff;
-
 }
 .green8 {
-	width:42px;
-	height:648px;
-	float:left;
 	background: no-repeat 4px 85px #7CFC00;
-	border-right:2px solid #ffffff;
-
 }
 
 .last {
 	border:none
 }
+.restart :hover {
+  background-color: green;
+  color: #ffffff;
+}
+
  .animal_section {
    display: block;
    background-color: #f1704a;
  }
  .other_section {
+   display: block;
    background-color: #172734;
  }
 
@@ -386,13 +466,184 @@ footer {
     padding-top: 43px;
     padding-bottom: 40px;
 }
-@media screen and (max-width: 1200px) {
-  #accordian {
-    height:259.2px;
-  	width:550px;
-  	margin:12px 0 150px 50px;
+/* //responsive media quieries */
+@media screen and (max-width: 750px) {
+  header {
+    height: 50px;
+  }
+  header img {
+    max-width: 50px;
+    margin-left: 150px;
+}
+  nav {
+    display: none;
+  }
+  div h1 {
+    margin-top: 30px;
+    font-size: 24px;
+  }
+
+  h2 {
+    letter-spacing: 1px;
+    padding-top: 3px;
+    font-size: 16px;
+}
+h4 {
+  padding: 5px;
+}
+p {
+  padding: 5px;
+}
+  #selector {
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
+    margin:0 auto;
+}
+.plant_article, .animal_article, .other_article {
+  height:275px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+article img {
+  max-width:40%;
+  opacity: 0.4;
+  padding-bottom:5px;
+  padding-top: 5px;
+}
+#accordion {
+ height:207.36px;
+ width:387px;
+}
+#accordion .panel {
+ height:207.36px;
+
+}
+#accordion .panel.active {
+ width:310px;
+}
+
+.panelContent-p1, .panelContent-p2, .panelContent-p3,
+.panelContent-p4, .panelContent-p5, .panelContent-p6,
+.panelContent-p7, .panelContent-p8 {
+ height:207.36px;
+ background-size: 309.76px 207.36px;
+ background-repeat: no-repeat;
+ text-align: center;
+ padding-top:10px;
+ line-height:1.0;
+}
+.green1, .green2, .green3, .green4, .green5, .green6, .green7, .green8 {
+	width:5px;
+	height:207.36px;
+}
+}
+
+@media screen and (max-width:1023px) {
+
+  #selector {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+    h2 {
+      letter-spacing: 2px;
+      padding-top: 10px;
+      font-size: 24px;
   }
 }
+
+@media screen and (max-width: 1125px) {
+  #selector {
+    margin-bottom: 50px;
+    margin-top: 20px;
+  }
+  #accordian {
+    height:331.776px;
+  	width:704px;
+  	margin:12px 0 150px 50px;
+  }
+  #accordion .panel.active {
+  	width:502.4px;
+  }
+
+}
+
+@media screen and (max-width: 2250px) and (min-width: 2000px) {
+  p {
+    font-size: 28px;
+    line-height: 2;
+  }
+
+  nav a {
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+
+  h4 {
+
+    font-size: 36px;
+  }
+  .plant_article, .animal_article, .other_article {
+    height:675px;
+  }
+
+}
+
+
+
+@media screen and (max-width: 2560px) and (min-width:2251px){
+  header {
+    height: 150px;
+  }
+  header img {
+    max-width: 175px;
+   padding-top: 10px;
+    margin-left: 200px;
+}
+  p {
+    font-size: 36px;
+    line-height: 2;
+  }
+
+  nav a {
+    padding-top: 20px;
+    font-size: 24px;
+    letter-spacing: 4px;
+  }
+  h4 {
+
+    font-size: 48px;
+  }
+  div h1 {
+    display: block;
+    margin-top:150px;
+    font-size:55px;
+  }
+
+  h2 {
+    letter-spacing: 5px;
+    font-size: 60px;
+  }
+
+  h3 {
+  font-size: 48px;
+  padding-bottom: 75px;
+  }
+
+
+  section {
+    display: block;
+    height: 1000px;
+  }
+
+  .plant_article, .animal_article, .other_article {
+    height:750px;
+  }
+}
+
+
+
+
 
 /* The bottom sections will be hidden until they choose
 an organism type - should it be a whole other page?
