@@ -304,7 +304,7 @@ article:hover > img {
   background-image: url("img/sugar_beet_blur.jpg");
 }
 .panelContent-p4:hover {
-  background-image:url("img/sugar_beet.JPG");
+  background-image:url("img/sugar_beet.jpg");
   color: #95c93d;
   transition-property: all ease-in-out;
   transition-delay: 1s;
@@ -502,11 +502,11 @@ button {
 }
 
 .panelContent-a1 {
-  background-image: url("/Users/nicoleholder/Desktop/fewd/final_project_nh/css/img/mountain_lion_blur.jpg");
+  background-image: url("img/mountain_lion_blur.jpg");
 
 }
 .panelContent-a1:hover {
-  background-image:url("/Users/nicoleholder/Desktop/fewd/final_project_nh/css/img/mountain_lion .JPG");
+  background-image:url("img/mountain_lion.jpg");
   transition-delay: 1s;
   transition-duration: 2s;
 }
@@ -546,7 +546,7 @@ button {
   background-image: url("img/butterfly_blur.jpg");
 }
 .panelContent-a3:hover {
-  background-image:url("img/butterfly.JPG");
+  background-image:url("img/butterfly.jpg");
   color: #f1704a;
   transition-delay: 1s;
   transition-duration: 2s;
@@ -770,7 +770,7 @@ button {
   background-image: url("img/algea_blur.jpg");
 }
 .panelcontent-o2:hover {
-  background-image:url("img/algea.jpeg");
+  background-image:url("img/algea.jpg");
   color: #172734;
   transition-delay: 1s;
   transition-duration: 2s;
@@ -791,7 +791,7 @@ button {
   background-image: url("img/fungi_blur.jpg");
 }
 .panelcontent-o3:hover {
-  background-image:url("img/fungi.jpeg");
+  background-image:url("img/fungi.jpg");
   color: #172734;
   transition-delay: 1s;
   transition-duration: 2s;
@@ -855,7 +855,7 @@ button {
 
 }
 .panelcontent-o6:hover {
-  background-image:url("img/fungi.jpeg");
+  background-image:url("img/fungi.jpg");
   color: #172734;
   transition-property: all ease-in-out;
   transition-delay: 1s;
