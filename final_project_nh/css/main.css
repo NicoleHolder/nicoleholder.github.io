@@ -240,11 +240,11 @@ article:hover > img {
 }
 
 .panelContent-p1 {
-  background-image: url("/Users/nicoleholder/Desktop/fewd/final_project_nh/css/img/lettuce_blur.jpg");
+  background-image: url("final_project_nh/css/img/lettuce_blur.jpg");
 
 }
 .panelContent-p1:hover {
-  background-image:url("/Users/nicoleholder/Desktop/fewd/final_project_nh/css/img/lettuce.jpg");
+  background-image:url("final_project_nh/css/img/lettuce.jpg");
   transition-delay: 1s;
   transition-duration: 2s;
 }
@@ -260,11 +260,11 @@ article:hover > img {
   color: #ffffff;
 }
 .panelContent-p2 {
-  background-image: url("/Users/nicoleholder/Desktop/fewd/final_project_nh/css/img/blueberries_blur.jpg"); */
+  background-image: url("/img/blueberries_blur.jpg");
 
 }
 .panelContent-p2:hover {
-  background-image:url("/Users/nicoleholder/Desktop/fewd/final_project_nh/css/img/blueberries.jpg");
+  background-image:url("img/blueberries.jpg");
   color: #95c93d;
   transition-delay: 1s;
   transition-duration: 2s;
@@ -281,10 +281,10 @@ article:hover > img {
   color: #ffffff;
 }
 .panelContent-p3 {
-  background-image: url("/Users/nicoleholder/Desktop/fewd/final_project_nh/css/img/miscanthus_blur.jpg");
+  background-image: url("/img/miscanthus_blur.jpg");
 }
 .panelContent-p3:hover {
-  background-image:url("/Users/nicoleholder/Desktop/fewd/final_project_nh/css/img/miscanthus.jpg");
+  background-image:url("/img/miscanthus.jpg");
   color: #95c93d;
   transition-delay: 1s;
   transition-duration: 2s;
@@ -301,10 +301,10 @@ article:hover > img {
   color: #ffffff;
 }
 .panelContent-p4 {
-  background-image: url("/Users/nicoleholder/Desktop/fewd/final_project_nh/css/img/sugar_beet_blur.jpg");
+  background-image: url("/img/sugar_beet_blur.jpg");
 }
 .panelContent-p4:hover {
-  background-image:url("/Users/nicoleholder/Desktop/fewd/final_project_nh/css/img/sugar_beet.JPG");
+  background-image:url("/img/sugar_beet.JPG");
   color: #95c93d;
   transition-property: all ease-in-out;
   transition-delay: 1s;
