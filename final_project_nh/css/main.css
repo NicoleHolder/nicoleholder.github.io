@@ -240,11 +240,11 @@ article:hover > img {
 }
 
 .panelContent-p1 {
-  background-image: url("final_project_nh/css/img/lettuce_blur.jpg");
+  background-image: url("img/lettuce_blur.jpg");
 
 }
 .panelContent-p1:hover {
-  background-image:url("final_project_nh/css/img/lettuce.jpg");
+  background-image:url("img/lettuce.jpg");
   transition-delay: 1s;
   transition-duration: 2s;
 }
@@ -260,7 +260,7 @@ article:hover > img {
   color: #ffffff;
 }
 .panelContent-p2 {
-  background-image: url("/img/blueberries_blur.jpg");
+  background-image: url("img/blueberries_blur.jpg");
 
 }
 .panelContent-p2:hover {
@@ -281,10 +281,10 @@ article:hover > img {
   color: #ffffff;
 }
 .panelContent-p3 {
-  background-image: url("/img/miscanthus_blur.jpg");
+  background-image: url("img/miscanthus_blur.jpg");
 }
 .panelContent-p3:hover {
-  background-image:url("/img/miscanthus.jpg");
+  background-image:url("img/miscanthus.jpg");
   color: #95c93d;
   transition-delay: 1s;
   transition-duration: 2s;
@@ -301,10 +301,10 @@ article:hover > img {
   color: #ffffff;
 }
 .panelContent-p4 {
-  background-image: url("/img/sugar_beet_blur.jpg");
+  background-image: url("img/sugar_beet_blur.jpg");
 }
 .panelContent-p4:hover {
-  background-image:url("/img/sugar_beet.JPG");
+  background-image:url("img/sugar_beet.JPG");
   color: #95c93d;
   transition-property: all ease-in-out;
   transition-delay: 1s;
@@ -322,11 +322,11 @@ article:hover > img {
 }
 
 .panelContent-p5 {
-  background-image: url("/Users/nicoleholder/Desktop/fewd/final_project_nh/css/img/brachypodium_blur.jpg");
+  background-image: url("img/brachypodium_blur.jpg");
 
 }
 .panelContent-p5:hover {
-  background-image:url("/Users/nicoleholder/Desktop/fewd/final_project_nh/css/img/brachypodium.jpg");
+  background-image:url("img/brachypodium.jpg");
   color: #95c93d;
   transition-property: all ease-in-out;
   transition-delay: 1s;
@@ -344,11 +344,11 @@ article:hover > img {
   color: #ffffff;
 }
 .panelContent-p6 {
-  background-image: url("/Users/nicoleholder/Desktop/fewd/final_project_nh/css/img/plant_blurry.jpg");
+  background-image: url("img/plant_blurry.jpg");
 
 }
 .panelContent-p6:hover {
-  background-image:url("/Users/nicoleholder/Desktop/fewd/final_project_nh/css/img/plant.jpg");
+  background-image:url("img/plant.jpg");
   color: #95c93d;
   transition-property: all ease-in-out;
   transition-delay: 1s;
@@ -365,11 +365,11 @@ article:hover > img {
   color: #ffffff;
 }
 .panelContent-p7 {
-  background-image: url("/Users/nicoleholder/Desktop/fewd/final_project_nh/css/img/flower_blur.jpg");
+  background-image: url("img/flower_blur.jpg");
 
 }
 .panelContent-p7:hover {
-  background-image:url("/Users/nicoleholder/Desktop/fewd/final_project_nh/css/img/flower.jpg");
+  background-image:url("img/flower.jpg");
   color: #f1704a;
   transition-property: all ease-in-out;
   transition-delay: 1s;
@@ -387,11 +387,11 @@ article:hover > img {
   color: #ffffff;
 }
 .panelContent-p8 {
-  background-image: url("/Users/nicoleholder/Desktop/fewd/final_project_nh/css/img/coffee_blur.jpg");
+  background-image: url("img/coffee_blur.jpg");
 
 }
 .panelContent-p8:hover {
-  background-image:url("/Users/nicoleholder/Desktop/fewd/final_project_nh/css/img/coffee.png");
+  background-image:url("img/coffee.png");
   color: #95c93d;
   transition-property: all ease-in-out;
   transition-delay: 1s;
@@ -522,11 +522,11 @@ button {
   color: #ffffff;
 }
 .panelContent-a2 {
-  background-image: url("/Users/nicoleholder/Desktop/fewd/final_project_nh/css/img/whiptail_blur.jpg"); */
+  background-image: url("img/whiptail_blur.jpg"); */
 
 }
 .panelContent-a2:hover {
-  background-image:url("/Users/nicoleholder/Desktop/fewd/final_project_nh/css/img/whiptail.jpg");
+  background-image:url("img/whiptail.jpg");
   color: #f1704a;
   transition-delay: 1s;
   transition-duration: 2s;
@@ -543,10 +543,10 @@ button {
   color: #ffffff;
 }
 .panelContent-a3 {
-  background-image: url("/Users/nicoleholder/Desktop/fewd/final_project_nh/css/img/butterfly_blur.jpg");
+  background-image: url("img/butterfly_blur.jpg");
 }
 .panelContent-a3:hover {
-  background-image:url("/Users/nicoleholder/Desktop/fewd/final_project_nh/css/img/butterfly.JPG");
+  background-image:url("img/butterfly.JPG");
   color: #f1704a;
   transition-delay: 1s;
   transition-duration: 2s;
@@ -563,10 +563,10 @@ button {
   color: #ffffff;
 }
 .panelContent-a4 {
-  background-image: url("/Users/nicoleholder/Desktop/fewd/final_project_nh/css/img/pig_blur.jpg");
+  background-image: url("img/pig_blur.jpg");
 }
 .panelContent-a4:hover {
-  background-image:url("/Users/nicoleholder/Desktop/fewd/final_project_nh/css/img/pig.jpg");
+  background-image:url("img/pig.jpg");
   color: #f1704a;
   transition-property: all ease-in-out;
   transition-delay: 1s;
@@ -584,11 +584,11 @@ button {
 }
 
 .panelContent-a5 {
-  background-image: url("/Users/nicoleholder/Desktop/fewd/final_project_nh/css/img/anna's_hummingbird_blur.jpg");
+  background-image: url("img/anna's_hummingbird_blur.jpg");
 
 }
 .panelContent-a5:hover {
-  background-image:url("/Users/nicoleholder/Desktop/fewd/final_project_nh/css/img/anna's_hummingbird.jpg");
+  background-image:url("img/anna's_hummingbird.jpg");
   color: #f1704a;
   transition-property: all ease-in-out;
   transition-delay: 1s;
@@ -606,11 +606,11 @@ button {
   color: #ffffff;
 }
 .panelContent-a6 {
-  background-image: url("/Users/nicoleholder/Desktop/fewd/final_project_nh/css/img/horse_blur.jpg");
+  background-image: url("img/horse_blur.jpg");
 
 }
 .panelContent-a6:hover {
-  background-image:url("/Users/nicoleholder/Desktop/fewd/final_project_nh/css/img/horse.jpg");
+  background-image:url("img/horse.jpg");
   color: #f1704a;
   transition-property: all ease-in-out;
   transition-delay: 1s;
@@ -627,11 +627,11 @@ button {
   color: #ffffff;
 }
 .panelContent-a7 {
-  background-image: url("/Users/nicoleholder/Desktop/fewd/final_project_nh/css/img/tuatara_blur.jpg");
+  background-image: url("img/tuatara_blur.jpg");
 
 }
 .panelContent-a7:hover {
-  background-image:url("/Users/nicoleholder/Desktop/fewd/final_project_nh/css/img/tuatara.jpg");
+  background-image:url("img/tuatara.jpg");
   color: #f1704a;
   transition-property: all ease-in-out;
   transition-delay: 1s;
@@ -649,11 +649,11 @@ button {
   color: #ffffff;
 }
 .panelContent-a8 {
-  background-image: url("/Users/nicoleholder/Desktop/fewd/final_project_nh/css/img/squirrel_blur.jpg");
+  background-image: url("img/squirrel_blur.jpg");
 
 }
 .panelContent-a8:hover {
-  background-image:url("/Users/nicoleholder/Desktop/fewd/final_project_nh/css/img/squirrel.jpg");
+  background-image:url("img/squirrel.jpg");
   color: #f1704a;
   transition-property: all ease-in-out;
   transition-delay: 1s;
@@ -747,11 +747,11 @@ button {
 }
 
 .panelcontent-o1 {
-  background-image: url("/Users/nicoleholder/Desktop/fewd/final_project_nh/css/img/fungi4_blur.jpg");
+  background-image: url("img/fungi4_blur.jpg");
 
 }
 .panelcontent-o1:hover {
-  background-image:url("/Users/nicoleholder/Desktop/fewd/final_project_nh/css/img/fungi4.jpeg");
+  background-image:url("img/fungi4.jpeg");
   transition-delay: 1s;
   transition-duration: 2s;
 }
@@ -767,10 +767,10 @@ button {
   color: #ffffff;
 }
 .panelcontent-o2 {
-  background-image: url("/Users/nicoleholder/Desktop/fewd/final_project_nh/css/img/algea_blur.jpg");
+  background-image: url("img/algea_blur.jpg");
 }
 .panelcontent-o2:hover {
-  background-image:url("/Users/nicoleholder/Desktop/fewd/final_project_nh/css/img/algea.jpeg");
+  background-image:url("img/algea.jpeg");
   color: #172734;
   transition-delay: 1s;
   transition-duration: 2s;
@@ -788,10 +788,10 @@ button {
   color: #ffffff;
 }
 .panelcontent-o3 {
-  background-image: url("/Users/nicoleholder/Desktop/fewd/final_project_nh/css/img/fungi_blur.jpg");
+  background-image: url("img/fungi_blur.jpg");
 }
 .panelcontent-o3:hover {
-  background-image:url("/Users/nicoleholder/Desktop/fewd/final_project_nh/css/img/fungi.jpeg");
+  background-image:url("img/fungi.jpeg");
   color: #172734;
   transition-delay: 1s;
   transition-duration: 2s;
@@ -808,10 +808,10 @@ button {
   color: #ffffff;
 }
 .panelcontent-o4 {
-  background-image: url("/Users/nicoleholder/Desktop/fewd/final_project_nh/css/img/fungi2_blur.jpg");
+  background-image: url("img/fungi2_blur.jpg");
 }
 .panelcontent-o4:hover {
-  background-image:url("/Users/nicoleholder/Desktop/fewd/final_project_nh/css/img/fungi2.jpg");
+  background-image:url("img/fungi2.jpg");
   color: #172734;
   transition-property: all ease-in-out;
   transition-delay: 1s;
@@ -829,11 +829,11 @@ button {
 }
 
 .panelcontent-o5 {
-  background-image: url("/Users/nicoleholder/Desktop/fewd/final_project_nh/css/img/fungi3_blur.jpg");
+  background-image: url("img/fungi3_blur.jpg");
 
 }
 .panelcontent-o5:hover {
-  background-image:url("/Users/nicoleholder/Desktop/fewd/final_project_nh/css/img/fungi3.jpg");
+  background-image:url("img/fungi3.jpg");
   color: #f1704a;
   transition-property: all ease-in-out;
   transition-delay: 1s;
@@ -851,11 +851,11 @@ button {
   color: #ffffff;
 }
 .panelcontent-o6 {
-  background-image: url("/Users/nicoleholder/Desktop/fewd/final_project_nh/css/img/fungi_blur.jpg");
+  background-image: url("img/fungi_blur.jpg");
 
 }
 .panelcontent-o6:hover {
-  background-image:url("/Users/nicoleholder/Desktop/fewd/final_project_nh/css/img/fungi.jpeg");
+  background-image:url("img/fungi.jpeg");
   color: #172734;
   transition-property: all ease-in-out;
   transition-delay: 1s;
@@ -872,11 +872,11 @@ button {
   color: #ffffff;
 }
 .panelcontent-o7 {
-  background-image: url("/Users/nicoleholder/Desktop/fewd/final_project_nh/css/img/flower_blur.jpg");
+  background-image: url("img/flower_blur.jpg");
 
 }
 .panelcontent-o7:hover {
-  background-image:url("/Users/nicoleholder/Desktop/fewd/final_project_nh/css/img/flower.jpg");
+  background-image:url("img/flower.jpg");
   color: #172734;
   transition-property: all ease-in-out;
   transition-delay: 1s;
@@ -894,11 +894,11 @@ button {
   color: #ffffff;
 }
 .panelcontent-o8 {
-  background-image: url("/Users/nicoleholder/Desktop/fewd/final_project_nh/css/img/coffee_blur.jpg");
+  background-image: url("img/coffee_blur.jpg");
 
 }
 .panelcontent-o8:hover {
-  background-image:url("/Users/nicoleholder/Desktop/fewd/final_project_nh/css/img/coffee.png");
+  background-image:url("img/coffee.png");
   color: #172734;
   transition-property: all ease-in-out;
   transition-delay: 1s;
